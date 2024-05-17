@@ -28,21 +28,22 @@
                 mapDataset = await response.json();
 
                 const transformations = {
-                    'us': null,
-                    'de': { scale: [0.05, -0.063], translate: [225, 620] },
-                    'br': { scale: [0.062, -0.063], translate: [165, 620] },
                     'at': { scale: [0.085, -0.044], translate: [35, 520] },
                     'au': { scale: [0.08, -0.06], translate: [63, 600] },
-                    'es': { scale: [0.115, -0.105], translate: [-200, 1050] },
-                    'gb': { scale: [0.041, -0.061], translate: [280, 610] },
+                    'be': { scale: [0.11, -0.09], translate: [50, 600] },
+                    'br': { scale: [0.062, -0.063], translate: [165, 620] },
+                    'ca': { scale: [0.081, -0.061], translate: [40, 610] },
+                    'de': { scale: [0.05, -0.063], translate: [225, 620] },
                     'dk': { scale: [0.074, -0.064], translate: [180, 630] },
-                    'in': { scale: [0.064, -0.064], translate: [180, 630] },
-                    'id': { scale: [0.08, -0.04], translate: [40, 500] },
+                    'es': { scale: [0.115, -0.105], translate: [-200, 1050] },
                     'fr': { scale: [0.047, -0.047], translate: [160, 600] },
+                    'gb': { scale: [0.041, -0.061], translate: [280, 610] },
+                    'id': { scale: [0.08, -0.04], translate: [40, 500] },
+                    'in': { scale: [0.064, -0.064], translate: [180, 630] },
                     'it': { scale: [0.0088, -0.0078], translate: [180, 680] },
                     'ph': { scale: [0.0046, -0.0046], translate: [220, 620] },
                     'pl': { scale: [0.064, -0.062], translate: [143, 620] },
-                    'ca': { scale: [0.081, -0.061], translate: [40, 610] },
+                    'us': null,
                 };
 
                 const transformation = transformations[country] || null;

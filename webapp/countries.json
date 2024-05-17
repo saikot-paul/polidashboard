@@ -26,6 +26,14 @@
         }
     },
     {
+        "name": "Belgium",
+        "code": "be",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Brazil",
         "code": "br",
         "first date": "15-10-2023",

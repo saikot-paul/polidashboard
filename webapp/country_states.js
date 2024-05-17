@@ -14,59 +14,37 @@ Description:
     As it supports autonomous regions, which is what facebook provides us with
 */
 
-const us = new Map([
+const at = new Map([
     ["Unknown", "N/A"],
-    ["Alabama", "01"],
-    ["Alaska", "02"],
-    ["Arizona", "04"],
-    ["Arkansas", "05"],
-    ["California", "06"],
-    ["Colorado", "08"],
-    ["Connecticut", "09"],
-    ["Delaware", "10"],
-    ["Washington, District of Columbia", "11"],
-    ["Florida", "12"],
-    ["Georgia", "13"],
-    ["Hawaii", "15"],
-    ["Idaho", "16"],
-    ["Illinois", "17"],
-    ["Indiana", "18"],
-    ["Iowa", "19"],
-    ["Kansas", "20"],
-    ["Kentucky", "21"],
-    ["Louisiana", "22"],
-    ["Maine", "23"],
-    ["Maryland", "24"],
-    ["Massachusetts", "25"],
-    ["Michigan", "26"],
-    ["Minnesota", "27"],
-    ["Mississippi", "28"],
-    ["Missouri", "29"],
-    ["Montana", "30"],
-    ["Nebraska", "31"],
-    ["Nevada", "32"],
-    ["New Hampshire", "33"],
-    ["New Jersey", "34"],
-    ["New Mexico", "35"],
-    ["New York", "36"],
-    ["North Carolina", "37"],
-    ["North Dakota", "38"],
-    ["Ohio", "39"],
-    ["Oklahoma", "40"],
-    ["Oregon", "41"],
-    ["Pennsylvania", "42"],
-    ["Rhode Island", "44"],
-    ["South Carolina", "45"],
-    ["South Dakota", "46"],
-    ["Tennessee", "47"],
-    ["Texas", "48"],
-    ["Utah", "49"],
-    ["Vermont", "50"],
-    ["Virginia", "51"],
-    ["Washington", "53"],
-    ["West Virginia", "54"],
-    ["Wisconsin", "55"],
-    ["Wyoming", "56"]
+    ["Burgenland", "AT.BU"], 
+    ["Carinthia", "AT.KA"], 
+    ["Lower Austria", "AT.NO"], 
+    ["Upper Austria", "AT.OO"], 
+    ["Salzburg", "AT.SZ"],
+    ["Styria", "AT.ST"],
+    ["Tyrol", "AT.TR"], 
+    ["Vorarlberg", "AT.VO"],
+    ["Vienna", "AT.WI"],
+]);
+
+const au = new Map([
+    ["Unknown", "N/A"],
+    ["New South Wales", "AU.NSW"], 
+    ["Victoria", "AU.VIC"], 
+    ["Queensland", "AU.QLD"], 
+    ["South Australia", "AU.SA"], 
+    ["Western Australia", "AU.WA"],
+    ["Tasmania", "AU.TAS"],
+    ["Northern Territory", "AU.NT"], 
+    ["Australian Capital Territory", "AU.ACT"],
+    ["Jervis Bay Territory", "AU.JB"],
+]);
+
+const be = new Map([
+    ["Unknown", "N/A"],
+    ["Flemish Region", "VLG"], 
+    ["Brussels", "BRU"], 
+    ["Wallonia", "WAL"], 
 ]);
 
 const br = new Map([
@@ -137,6 +115,38 @@ const de = new Map([
     ["Thüringen", "DE.TH"]
 ]);
 
+const dk = new Map([
+    ["Unknown", "N/A"],
+    ["Capital Region of Denmark", "DK.6325"], 
+    ["Central Denmark Region", "DK.6326"],
+    ["North Denmark Region", "DK.3568"],
+    ["Zealand Region", "DK.3563"],
+    ["Region of Southern Denmark", "DK.3564"],
+]);
+
+const es = new Map([
+    ["Unknown", "N/A"],
+    ["Andalusia", "01"], 
+    ["Aragón", "02"],
+    ["Principality of Asturias", "03"],
+    ["Balearic Islands", "04"],
+    ["Islas Canarias", "05"],
+    ["Cantabria", "06"],
+    ["Castilla y Leon", "07"], 
+    ["Castilla-La Mancha", "08"],
+    ["Cataluña", "09"],
+    ["Comunidad Valenciana", "10"],
+    ["Extremadura", "11"],
+    ["Galicia", "12"],
+    ["Comunidad de Madrid", "13"],
+    ["Region of Murcia", "14"],
+    ["Navarra", "15"],
+    ["País Vasco", "16"],
+    ["La Rioja", "17"],
+    ["Ceuta", "18"],
+    ["Melilla", "19"],
+]);
+
 const fr = new Map([
     ["Unknown", "N/A"],
     ["Poitou-Charentes", "FR.T"],
@@ -168,62 +178,12 @@ const fr = new Map([
     ["Guadeloupe", "FR.GP"],
 ]);
 
-const au = new Map([
+const gb = new Map([
     ["Unknown", "N/A"],
-    ["New South Wales", "AU.NSW"], 
-    ["Victoria", "AU.VIC"], 
-    ["Queensland", "AU.QLD"], 
-    ["South Australia", "AU.SA"], 
-    ["Western Australia", "AU.WA"],
-    ["Tasmania", "AU.TAS"],
-    ["Northern Territory", "AU.NT"], 
-    ["Australian Capital Territory", "AU.ACT"],
-    ["Jervis Bay Territory", "AU.JB"],
-]);
-
-const at = new Map([
-    ["Unknown", "N/A"],
-    ["Burgenland", "AT.BU"], 
-    ["Carinthia", "AT.KA"], 
-    ["Lower Austria", "AT.NO"], 
-    ["Upper Austria", "AT.OO"], 
-    ["Salzburg", "AT.SZ"],
-    ["Styria", "AT.ST"],
-    ["Tyrol", "AT.TR"], 
-    ["Vorarlberg", "AT.VO"],
-    ["Vienna", "AT.WI"],
-]);
-
-const es = new Map([
-    ["Unknown", "N/A"],
-    ["Andalusia", "01"], 
-    ["Aragón", "02"],
-    ["Principality of Asturias", "03"],
-    ["Balearic Islands", "04"],
-    ["Islas Canarias", "05"],
-    ["Cantabria", "06"],
-    ["Castilla y Leon", "07"], 
-    ["Castilla-La Mancha", "08"],
-    ["Cataluña", "09"],
-    ["Comunidad Valenciana", "10"],
-    ["Extremadura", "11"],
-    ["Galicia", "12"],
-    ["Comunidad de Madrid", "13"],
-    ["Region of Murcia", "14"],
-    ["Navarra", "15"],
-    ["País Vasco", "16"],
-    ["La Rioja", "17"],
-    ["Ceuta", "18"],
-    ["Melilla", "19"],
-]);
-
-const dk = new Map([
-    ["Unknown", "N/A"],
-    ["Capital Region of Denmark", "DK.6325"], 
-    ["Central Denmark Region", "DK.6326"],
-    ["North Denmark Region", "DK.3568"],
-    ["Zealand Region", "DK.3563"],
-    ["Region of Southern Denmark", "DK.3564"],
+    ["England", "GB.ENG"],
+    ["Scotland", "GB.SCT"],
+    ["Wales", "GB.WLS"],
+    ["Northern Ireland", "GB.NIR"]
 ]);
 
 const id = new Map([ 
@@ -367,32 +327,80 @@ const pl = new Map([
     ["Silesian Voivodeship", 'PL.SL'],
 ]);
 
-const gb = new Map([
+const us = new Map([
     ["Unknown", "N/A"],
-    ["England", "GB.ENG"],
-    ["Scotland", "GB.SCT"],
-    ["Wales", "GB.WLS"],
-    ["Northern Ireland", "GB.NIR"]
+    ["Alabama", "01"],
+    ["Alaska", "02"],
+    ["Arizona", "04"],
+    ["Arkansas", "05"],
+    ["California", "06"],
+    ["Colorado", "08"],
+    ["Connecticut", "09"],
+    ["Delaware", "10"],
+    ["Washington, District of Columbia", "11"],
+    ["Florida", "12"],
+    ["Georgia", "13"],
+    ["Hawaii", "15"],
+    ["Idaho", "16"],
+    ["Illinois", "17"],
+    ["Indiana", "18"],
+    ["Iowa", "19"],
+    ["Kansas", "20"],
+    ["Kentucky", "21"],
+    ["Louisiana", "22"],
+    ["Maine", "23"],
+    ["Maryland", "24"],
+    ["Massachusetts", "25"],
+    ["Michigan", "26"],
+    ["Minnesota", "27"],
+    ["Mississippi", "28"],
+    ["Missouri", "29"],
+    ["Montana", "30"],
+    ["Nebraska", "31"],
+    ["Nevada", "32"],
+    ["New Hampshire", "33"],
+    ["New Jersey", "34"],
+    ["New Mexico", "35"],
+    ["New York", "36"],
+    ["North Carolina", "37"],
+    ["North Dakota", "38"],
+    ["Ohio", "39"],
+    ["Oklahoma", "40"],
+    ["Oregon", "41"],
+    ["Pennsylvania", "42"],
+    ["Rhode Island", "44"],
+    ["South Carolina", "45"],
+    ["South Dakota", "46"],
+    ["Tennessee", "47"],
+    ["Texas", "48"],
+    ["Utah", "49"],
+    ["Vermont", "50"],
+    ["Virginia", "51"],
+    ["Washington", "53"],
+    ["West Virginia", "54"],
+    ["Wisconsin", "55"],
+    ["Wyoming", "56"]
 ]);
 
 // ^^^ Add more map key-value pairs above here, name maps as their 2 character country code
 
 const maps = {
-    'us': us,
+    'at': at,
+    'au': au,
+    'be': be,
+    'br': br,
     'ca': ca,
     'de': de,
-    'au': au,
-    'gb': gb,
+    'dk': dk,
+    'es': es,
     'fr': fr,
+    'gb': gb,
     'id': id,
     'in': ind,
     'it': it,
     'ph': ph,
     'pl': pl,
-    'br': br,
-    'es': es,
-    'dk': dk,
-    'at': at,
+    'us': us,
     // ^^^ add defined maps here
 }
 
