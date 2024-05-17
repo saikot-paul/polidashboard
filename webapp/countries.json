@@ -1,5 +1,13 @@
 [
     {
+        "name": "Austra",
+        "code": "at",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Australia",
         "code": "au",
         "first date": "15-10-2023",

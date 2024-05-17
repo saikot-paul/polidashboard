@@ -181,6 +181,19 @@ const au = new Map([
     ["Jervis Bay Territory", "AU.JB"],
 ]);
 
+const at = new Map([
+    ["Unknown", "N/A"],
+    ["Burgenland", "AT.BU"], 
+    ["Carinthia", "AT.KA"], 
+    ["Lower Austria", "AT.NO"], 
+    ["Upper Austria", "AT.OO"], 
+    ["Salzburg", "AT.SZ"],
+    ["Styria", "AT.ST"],
+    ["Tyrol", "AT.TR"], 
+    ["Vorarlberg", "AT.VO"],
+    ["Vienna", "AT.WI"],
+]);
+
 const es = new Map([
     ["Unknown", "N/A"],
     ["Andalusia", "01"], 
@@ -379,6 +392,7 @@ const maps = {
     'br': br,
     'es': es,
     'dk': dk,
+    'at': at,
     // ^^^ add defined maps here
 }
 
