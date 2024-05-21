@@ -239,6 +239,22 @@ const fr = new Map([
     ["Guadeloupe", "FR.GP"],
 ]);
 
+const ge = new Map([
+    ["Unknown", "N/A"],
+    ["Abkhazia", "GE.AB"],
+    ["Samegrelo-Zemo Svaneti", "GE.SZ"],
+    ["Racha-Lechkhumi and Kvemo Svaneti", "GE.RK"],
+    ["Shida Kartli", "GE.SD"],
+    ["Mtskheta-Mtianeti", "GE.MM"],
+    ["Kakheti", "GE.KA"],
+    ["Guria", "GE.GU"],
+    ["Imereti", "GE.IM"],
+    ["Adjara", "GE.AJ"],
+    ["Samtskhe-Javakheti", "GE.SJ"],
+    ["Kvemo Kartli", "GE.KK"],
+    ["Tbilisi", "GE.TB"],
+]);
+
 const gb = new Map([
     ["Unknown", "N/A"],
     ["England", "GB.ENG"],
@@ -458,6 +474,7 @@ const maps = {
     'es': es,
     'fi': fi,
     'fr': fr,
+    'ge': ge,
     'gb': gb,
     'id': id,
     'in': ind,

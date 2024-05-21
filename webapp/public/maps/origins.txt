@@ -19,3 +19,4 @@ PL: https://code.highcharts.com/mapdata/countries/pl/pl-all.topo.json
 CZ: https://code.highcharts.com/mapdata/countries/cz/cz-all.topo.json
 EE: https://code.highcharts.com/mapdata/countries/ee/ee-all.topo.json
 FI: https://code.highcharts.com/mapdata/countries/fi/fi-all.topo.json
+GE: https://code.highcharts.com/mapdata/countries/ge/ge-all.topo.json
