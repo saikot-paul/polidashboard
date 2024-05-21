@@ -306,6 +306,29 @@ const hr = new Map([
     ["Dubrovnik-Neretva County", "HR.DN"],
 ]);
 
+const hu = new Map([
+    ["Unknown", "N/A"],
+    ["Győr-Moson-Sopron County", "HU.GS"],
+    ["Vas County", "HU.VA"],
+    ["Zala County", "HU.ZA"],
+    ["Veszprém County", "HU.VE"],
+    ["Somogy County", "HU.SO"],
+    ["Komárom-Esztergom County", "HU.KE"],
+    ["Fejér County", "HU.FE"],
+    ["Tolna County", "HU.TO"],
+    ["Baranya County", "HU.BA"],
+    ["Pest County", "HU.PE"],
+    ["Budapest", "HU.BU"],
+    ["Bács-Kiskun County", "HU.BK"],
+    ["Nógrád County", "HU.NO"],
+    ["Heves County", "HU.HE"],
+    ["Jász-Nagykun-Szolnok County", "HU.JN"],
+    ["Csongrád County", "HU.CS"],
+    ["Borsod-Abaúj-Zemplén County", "HU.BZ"],
+    ["Hajdú-Bihar County", "HU.HB"],
+    ["Békés County", "HU.BE"],
+    ["Szabolcs-Szatmár-Bereg County", "HU.SZ"],
+]);
 
 const id = new Map([ 
     ["Unknown", "N/A"],
@@ -522,6 +545,7 @@ const maps = {
     'gb': gb,
     'gr': gr,
     'hr': hr,
+    'hu': hu,
     'id': id,
     'in': ind,
     'it': it,

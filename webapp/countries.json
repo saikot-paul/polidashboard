@@ -182,6 +182,14 @@
         "regions": {}
     },
     {
+        "name": "Hungary",
+        "code": "hu",
+        "first date": "15-10-2023",
+        "currency": "HUF",
+        "currency symbol": "Ft",
+        "regions": {}
+    },
+    {
         "name": "India",
         "code": "in",
         "first date": "15-10-2023",
