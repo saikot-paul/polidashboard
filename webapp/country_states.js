@@ -143,6 +143,25 @@ const dk = new Map([
     ["Region of Southern Denmark", "DK.3564"],
 ]);
 
+const ee = new Map([
+    ["Unknown", "N/A"],
+    ["Saare County", "EE.SA"], 
+    ["Hiiu County", "EE.HI"], 
+    ["Lääne County", "EE.LN"], 
+    ["Harju County", "EE.HA"], 
+    ["Rapla County", "EE.RA"], 
+    ["Pärnu County", "EE.PR"], 
+    ["Lääne-Viru County", "EE.LV"], 
+    ["Järva County", "EE.JR"], 
+    ["Viljandi County", "EE.VD"], 
+    ["Ida-Viru County", "EE.IV"], 
+    ["Jõgeva County", "EE.JN"], 
+    ["Tartu County", "EE.TA"], 
+    ["Valga County", "EE.VG"], 
+    ["Põlva County", "EE.PL"], 
+    ["Võru County", "EE.VR"], 
+]);
+
 const es = new Map([
     ["Unknown", "N/A"],
     ["Andalusia", "01"], 
@@ -412,6 +431,7 @@ const maps = {
     'cz': cz,
     'de': de,
     'dk': dk,
+    'ee': ee,
     'es': es,
     'fr': fr,
     'gb': gb,

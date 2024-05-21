@@ -101,22 +101,6 @@
         "regions": {}
     },
     {
-        "name": "Denmark",
-        "code": "dk",
-        "first date": "15-10-2023",
-        "currency": "DKK",
-        "currency symbol": "Kr.",
-        "regions": {}
-    },
-    {
-        "name": "France",
-        "code": "fr",
-        "first date": "15-10-2023",
-        "currency": "EUR",
-        "currency symbol": "€",
-        "regions": {}
-    },
-    {
         "name": "Germany",
         "code": "de",
         "first date": "15-10-2023",
@@ -140,6 +124,30 @@
             "Schleswig-Holstein":"Schleswig-Holstein",
             "Thuringia":"Thuringia"
         }
+    },
+    {
+        "name": "Denmark",
+        "code": "dk",
+        "first date": "15-10-2023",
+        "currency": "DKK",
+        "currency symbol": "Kr.",
+        "regions": {}
+    },
+    {
+        "name": "Estonia",
+        "code": "ee",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "France",
+        "code": "fr",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
     },
     {
         "name": "India",
