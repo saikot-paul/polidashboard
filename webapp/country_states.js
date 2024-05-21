@@ -263,6 +263,24 @@ const gb = new Map([
     ["Northern Ireland", "GB.NIR"]
 ]);
 
+const gr = new Map([
+    ["Unknown", "N/A"],
+    ["Eastern Macedonia and Thrace", "GR.MT"],
+    ["Central Macedonia", "GR.MC"],
+    ["Western Macedonia", "GR.MW"],
+    ["Epirus (region)", "GR.EP"],
+    ["Ionian Islands (region)", "GR.II"],
+    ["Northern Aegean", "GR.AN"],
+    ["Thessaly", "GR.TS"],
+    ["Western Greece", "GR.GW"],
+    ["Central Greece (region)", "GR.GC"],
+    ["Southern Aegean", "GR.AS"],
+    ["Crete", "GR.CR"],
+    ["Attica (region)", "GR.AT"],
+    ["Peloponnese (region)", "GR.PP"],
+    ["Mount Athos", "GR.MA"],
+]);
+
 const id = new Map([ 
     ["Unknown", "N/A"],
     ["Aceh", "ID.AC"], // #1 (In GeometryCollection object)
@@ -476,6 +494,7 @@ const maps = {
     'fr': fr,
     'ge': ge,
     'gb': gb,
+    'gr': gr,
     'id': id,
     'in': ind,
     'it': it,
