@@ -185,6 +185,29 @@ const es = new Map([
     ["Melilla", "19"],
 ]);
 
+const fi = new Map([
+    ["Unknown", "N/A"],
+    ["Lapland (Finland)", "FI.3285"],
+    ["Northern Ostrobothnia", "FI.3281"],
+    ["Kainuu", "FI.3288"],
+    ["Central Ostrobothnia", "FI.3289"],
+    ["Central Finland", "FI.3286"], // unconfirmed
+    ["Pohjois-Savo", "FI.3287"],
+    ["Etelä-Savo", "FI.3295"],
+    ["North Karelia", "FI.3296"],
+    ["South Karelia", "FI.3294"],
+    ["Kymenlaakso", "FI.3276"],
+    ["Ostrobothnia (region)", "FI.3280"],
+    ["Southern Ostrobothnia", "FI.3290"],
+    ["Pirkanmaa", "FI.3293"],
+    ["Päijät-Häme", "FI.3291"],
+    ["Uusimaa", "FI.3275"],
+    ["Tavastia Proper", "FI.3292"],
+    ["Satakunta", "FI.3279"],
+    ["Southwest Finland", "FI.3272"],
+    ["Åland Islands", "FI.AI"],
+]);
+
 const fr = new Map([
     ["Unknown", "N/A"],
     ["Poitou-Charentes", "FR.T"],
@@ -433,6 +456,7 @@ const maps = {
     'dk': dk,
     'ee': ee,
     'es': es,
+    'fi': fi,
     'fr': fr,
     'gb': gb,
     'id': id,
