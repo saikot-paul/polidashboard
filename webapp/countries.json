@@ -1,13 +1,5 @@
 [
     {
-        "name": "Austra",
-        "code": "at",
-        "first date": "15-10-2023",
-        "currency": "EUR",
-        "currency symbol": "€",
-        "regions": {}
-    },
-    {
         "name": "Australia",
         "code": "au",
         "first date": "15-10-2023",
@@ -24,6 +16,14 @@
             "Victoria": "VIC",
             "Western Australia": "WA"
         }
+    },
+    {
+        "name": "Austria",
+        "code": "at",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
     },
     {
         "name": "Belgium",
@@ -93,11 +93,59 @@
         }
     },
     {
+        "name": "Croatia",
+        "code": "hr",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Czechia",
         "code": "cz",
         "first date": "15-10-2023",
         "currency": "CZK",
         "currency symbol": "CZK",
+        "regions": {}
+    },
+    {
+        "name": "Denmark",
+        "code": "dk",
+        "first date": "15-10-2023",
+        "currency": "DKK",
+        "currency symbol": "Kr.",
+        "regions": {}
+    },
+    {
+        "name": "Estonia",
+        "code": "ee",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "Finland",
+        "code": "fi",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "France",
+        "code": "fr",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "Georgia",
+        "code": "ge",
+        "first date": "15-10-2023",
+        "currency": "USD",
+        "currency symbol": "$",
         "regions": {}
     },
     {
@@ -124,67 +172,6 @@
             "Schleswig-Holstein":"Schleswig-Holstein",
             "Thuringia":"Thuringia"
         }
-    },
-    {
-        "name": "Denmark",
-        "code": "dk",
-        "first date": "15-10-2023",
-        "currency": "DKK",
-        "currency symbol": "Kr.",
-        "regions": {}
-    },
-    {
-        "name": "Estonia",
-        "code": "ee",
-        "first date": "15-10-2023",
-        "currency": "EUR",
-        "currency symbol": "€",
-        "regions": {}
-    },
-    {
-        "name": "Spain",
-        "code": "es",
-        "first date": "15-10-2023",
-        "currency": "EUR",
-        "currency symbol": "€",
-        "regions": {}
-    },
-    {
-        "name": "Finland",
-        "code": "fi",
-        "first date": "15-10-2023",
-        "currency": "EUR",
-        "currency symbol": "€",
-        "regions": {}
-    },
-    {
-        "name": "France",
-        "code": "fr",
-        "first date": "15-10-2023",
-        "currency": "EUR",
-        "currency symbol": "€",
-        "regions": {}
-    },
-    {
-        "name": "United Kingdom",
-        "code": "gb",
-        "first date": "15-10-2023",
-        "currency": "GBP",
-        "currency symbol": "£",
-        "regions": {
-            "England": "England",
-            "Scotland": "Scotland",
-            "Wales": "Wales",
-            "Northern Ireland": "Northern Ireland"
-        }
-    },
-    {
-        "name": "Georgia",
-        "code": "ge",
-        "first date": "15-10-2023",
-        "currency": "USD",
-        "currency symbol": "$",
-        "regions": {}
     },
     {
         "name": "Greece",
@@ -233,6 +220,27 @@
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
+    },
+    {
+        "name": "Spain",
+        "code": "es",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "United Kingdom",
+        "code": "gb",
+        "first date": "15-10-2023",
+        "currency": "GBP",
+        "currency symbol": "£",
+        "regions": {
+            "England": "England",
+            "Scotland": "Scotland",
+            "Wales": "Wales",
+            "Northern Ireland": "Northern Ireland"
+        }
     },
     {
         "name": "United States",

@@ -21,3 +21,4 @@ EE: https://code.highcharts.com/mapdata/countries/ee/ee-all.topo.json
 FI: https://code.highcharts.com/mapdata/countries/fi/fi-all.topo.json
 GE: https://code.highcharts.com/mapdata/countries/ge/ge-all.topo.json
 GR: https://code.highcharts.com/mapdata/countries/gr/gr-all.topo.json
+HR: https://code.highcharts.com/mapdata/countries/hr/hr-all.topo.json

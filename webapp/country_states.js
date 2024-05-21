@@ -281,6 +281,32 @@ const gr = new Map([
     ["Mount Athos", "GR.MA"],
 ]);
 
+const hr = new Map([
+    ["Unknown", "N/A"],
+    ["Istria County", "HR.IS"],
+    ["Primorje-Gorski Kotar County", "HR.PG"],
+    ["Karlovac County", "HR.KA"],
+    ["Zagreb County", "HR.ZG"],
+    ["Zagreb", "HR.GZ"],
+    ["Sisak-Moslavina County", "HR.SM"],
+    ["Krapina-Zagorje County", "HR.KZ"],
+    ["Varaždin County", "HR.VA"],
+    ["Međimurje County", "HR.ME"],
+    ["Koprivnica-Križevci County", "HR.KK"],
+    ["Bjelovar-Bilogora County", "HR.BB"],
+    ["Virovitica-Podravina County", "HR.VP"],
+    ["Požega-Slavonia County", "HR.SP"],
+    ["Brod-Posavina County", "HR.2228"],
+    ["Osijek-Baranja County", "HR.OB"],
+    ["Vukovar-Srijem County", "HR.VS"],
+    ["Lika-Senj County", "HR.LS"],
+    ["Zadar County", "HR.ZD"],
+    ["Šibenik-Knin County", "HR.SB"],
+    ["Split-Dalmatia County", "HR.SD"],
+    ["Dubrovnik-Neretva County", "HR.DN"],
+]);
+
+
 const id = new Map([ 
     ["Unknown", "N/A"],
     ["Aceh", "ID.AC"], // #1 (In GeometryCollection object)
@@ -495,6 +521,7 @@ const maps = {
     'ge': ge,
     'gb': gb,
     'gr': gr,
+    'hr': hr,
     'id': id,
     'in': ind,
     'it': it,
