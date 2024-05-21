@@ -95,6 +95,25 @@ const ca = new Map([
     ["Prince Edward Island", "CA.PE"],
 ]);
 
+const cz = new Map([
+    ["Unknown", "N/A"],
+    ["Karlovy Vary Region", "CZ.KK"],
+    ["Plzeň Region", "CZ.6304"],
+    ["Ústí nad Labem Region", "CZ.6303"],
+    ["Central Bohemian Region", "CZ.SK"],
+    ["South Bohemian Region", "CZ.CK"],
+    ["Prague", "CZ.2293"],
+    ["Liberec Region", "CZ.LK"],
+    ["Hradec Králové Region", "CZ.HK"],
+    ["Pardubice Region", "CZ.6308"],
+    ["Vysočina Region", "CZ.JK"],
+    ["Vysočina Region", "CZ.JK"],
+    ["South Moravian Region", "CZ.6305"],
+    ["Olomouc Region", "CZ.6307"],
+    ["Zlín Region", "CZ.6306"],
+    ["Moravian-Silesian Region", "CZ.VK"],
+]);
+
 const de = new Map([
     ["Unknown", "N/A"],
     ["Baden-Württemberg", "DE.BW"],
@@ -390,6 +409,7 @@ const maps = {
     'be': be,
     'br': br,
     'ca': ca,
+    'cz': cz,
     'de': de,
     'dk': dk,
     'es': es,

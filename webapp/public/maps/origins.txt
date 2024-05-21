@@ -16,3 +16,4 @@ IN: https://code.highcharts.com/mapdata/countries/in/custom/in-all-andaman-and-n
 ID: https://code.highcharts.com/mapdata/countries/id/id-all.topo.json
 CA: https://code.highcharts.com/mapdata/countries/ca/ca-all.topo.json
 PL: https://code.highcharts.com/mapdata/countries/pl/pl-all.topo.json
+CZ: https://code.highcharts.com/mapdata/countries/cz/cz-all.topo.json

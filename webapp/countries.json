@@ -93,6 +93,14 @@
         }
     },
     {
+        "name": "Czechia",
+        "code": "cz",
+        "first date": "15-10-2023",
+        "currency": "CZK",
+        "currency symbol": "CZK",
+        "regions": {}
+    },
+    {
         "name": "Denmark",
         "code": "dk",
         "first date": "15-10-2023",
