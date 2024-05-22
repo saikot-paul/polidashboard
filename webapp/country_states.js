@@ -460,6 +460,20 @@ const it = new Map([
     ["Sardinia", 20], // C
 ]);
 
+const lt = new Map([
+    ["Unknown", "N/A"],
+    ["Alytus County", "LT.AS"],
+    ["Kaunas County", "LT.KS"],
+    ["Klaipėda County", "LT.KP"],
+    ["Marijampolė County", "LT.MA"],
+    ["Panevėžys County", "LT.PA"],
+    ["Šiauliai County", "LT.SH"],
+    ["Tauragė County", "LT.TG"],
+    ["Telšiai County", "LT.TL"],
+    ["Utena County", "LT.UN"],
+    ["Vilnius County", "LT.VI"],
+]);
+
 const ph = new Map([ 
     ["Unknown", "N/A"],
     ["Davao Region", 11],
@@ -580,6 +594,7 @@ const maps = {
     'id': id,
     'in': ind,
     'it': it,
+    'lt': lt,
     'ph': ph,
     'pl': pl,
     'us': us,
