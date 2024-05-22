@@ -490,6 +490,23 @@ const lv = new Map([
     ["Vidzeme", "Vidzeme"],
 ]);
 
+const nl = new Map([
+    ["Unknown", "N/A"],
+    ["Zeeland", "NL.ZE"],
+    ["Zuid-Holland", "NL.ZH"],
+    ["North Brabant", "NL.NB"],
+    ["Limburg", "NL.LI"],
+    ["Noord-Holland", "NL.NH"],
+    ["Utrecht", "NL.UT"],
+    ["Gelderland", "NL.GE"],
+    ["Friesland", "NL.FR"],
+    ["Overijssel", "NL.OV"],
+    ["Overijssel", "NL.OV"],
+    ["Flevoland", "NL.FL"],
+    ["Drenthe", "NL.DR"],
+    ["Groningen", "NL.GR"],
+]);
+
 const ph = new Map([ 
     ["Unknown", "N/A"],
     ["Davao Region", 11],
@@ -613,6 +630,7 @@ const maps = {
     'lt': lt,
     'lu': lu,
     'lv': lv,
+    'nl': nl,
     'ph': ph,
     'pl': pl,
     'us': us,
