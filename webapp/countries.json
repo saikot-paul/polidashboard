@@ -222,6 +222,14 @@
         "regions": {}
     },
     {
+        "name": "Latvia",
+        "code": "lv",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Lithuania",
         "code": "lt",
         "first date": "15-10-2023",

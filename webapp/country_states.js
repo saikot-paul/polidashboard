@@ -481,6 +481,15 @@ const lu = new Map([
     ["Luxembourg District", "LU.LU"],
 ]);
 
+const lv = new Map([
+    ["Unknown", "N/A"],
+    ["Riga Planning Region", "Riga"],
+    ["Kurzeme Region", "Kurzeme"],
+    ["Latgale", "Latgale"],
+    ["Semigallia", "Semigallia"],
+    ["Vidzeme", "Vidzeme"],
+]);
+
 const ph = new Map([ 
     ["Unknown", "N/A"],
     ["Davao Region", 11],
@@ -603,6 +612,7 @@ const maps = {
     'it': it,
     'lt': lt,
     'lu': lu,
+    'lv': lv,
     'ph': ph,
     'pl': pl,
     'us': us,
