@@ -474,6 +474,13 @@ const lt = new Map([
     ["Vilnius County", "LT.VI"],
 ]);
 
+const lu = new Map([
+    ["Unknown", "N/A"],
+    ["Diekirch District", "LU.DI"],
+    ["Grevenmacher District", "LU.GR"],
+    ["Luxembourg District", "LU.LU"],
+]);
+
 const ph = new Map([ 
     ["Unknown", "N/A"],
     ["Davao Region", 11],
@@ -595,6 +602,7 @@ const maps = {
     'in': ind,
     'it': it,
     'lt': lt,
+    'lu': lu,
     'ph': ph,
     'pl': pl,
     'us': us,

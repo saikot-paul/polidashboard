@@ -230,6 +230,14 @@
         "regions": {}
     },
     {
+        "name": "Luxembourg",
+        "code": "lu",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Philippines",
         "code": "ph",
         "first date": "15-10-2023",
