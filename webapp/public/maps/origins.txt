@@ -28,3 +28,4 @@ LT: https://code.highcharts.com/mapdata/countries/lt/lt-all.topo.json
 LU: https://code.highcharts.com/mapdata/countries/lu/lu-all.topo.json
 LV: https://code.highcharts.com/mapdata/countries/lv/lv-all.topo.json  # Modified to use the post 2021 planning regions (https://en.wikipedia.org/wiki/Planning_regions_of_Latvia_(from_2021))
 NL: https://code.highcharts.com/mapdata/countries/nl/nl-all.topo.json
+PT: https://code.highcharts.com/mapdata/countries/pt/pt-all.topo.json

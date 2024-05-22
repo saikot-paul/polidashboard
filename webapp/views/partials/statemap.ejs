@@ -55,6 +55,7 @@
                     'nl': { scale: [0.058, -0.059], translate: [160, 595] },
                     'ph': { scale: [0.0046, -0.0046], translate: [220, 620] },
                     'pl': { scale: [0.064, -0.062], translate: [143, 620] },
+                    'pt': { scale: [0.052, -0.049], translate: [130, 600] },//{ scale: [0.194, -0.112], translate: [-1200, 1020] },
                     'us': null,
                 };
 
@@ -577,6 +578,25 @@
                         transform: "rotate(-38 " + (770 + 200 / 2) + " " + (240 + 80 / 2) + ")"
                     },
                     {
+                        country: 'pt',
+                        id: 'PT.AC',
+                        x: 130,
+                        y: 70,
+                        width: 350,
+                        height: 90,
+                        transform: "rotate(29 130 90)"
+                    },
+                    {
+                        country: 'pt',
+                        id: 'PT.MA',
+                        x: 310,
+                        y: 450,
+                        width: 120,
+                        height: 120,
+                        transform: "",
+                        stroke: 'black'
+                    },
+                    {
                         country: 'in',
                         id: 'IN.AN',
                         x: 680,
@@ -611,28 +631,62 @@
                     createInvisibleSquare(box);
                 });
 
-                // Create visual dividng lines for Spain
-                if (country === 'es') {
-                    // Draw a divider
-                    const topLine = [
-                        [20, height - 150],
-                        [360, height - 150]
-                    ];
-                    const sideLine = [
-                        [360, height - 150],
-                        [360, height]
-                    ];
+
+                const lines = [
+                    {
+                        country: 'es',
+                        x1: 20,
+                        y1: height - 150,
+                        x2: 360,
+                        y2: height - 150, 
+                    },
+                    {
+                        country: 'es',
+                        x1: 360,
+                        y1: height - 150,
+                        x2: 360,
+                        y2: height, 
+                    },
+                    {
+                        country: 'pt',
+                        x1: 430,
+                        y1: 170,
+                        x2: 430,
+                        y2: 310,
+                    },
+                    {
+                        country: 'pt',
+                        x1: 130,
+                        y1: 310,
+                        x2: 430,
+                        y2: 310,
+                    }
+                ]
+
+                function createDivider(line) {
+                    if (line.country !== country) {
+                        return;
+                    }
+
                     g.append("path")
-                        .attr("d", path({ type: "LineString", coordinates: topLine }))
-                        .attr("stroke", "black")
-                        .attr("stroke-width", 1);
-                    g.append("path")
-                        .attr("d", path({ type: "LineString", coordinates: sideLine }))
+                        .attr("d", path({ type: "LineString", coordinates: [[line.x1, line.y1], [line.x2, line.y2]] }))
                         .attr("stroke", "black")
                         .attr("stroke-width", 1);
                 }
 
-                // Create box line for Denmark island
+                lines.forEach(line => {
+                    createDivider(line);
+                });
+
+                function addSquare(squareCoordinates) {
+                    g.append("path")
+                        .attr("d", d3.line()(squareCoordinates)) // Use d3.line() to create the path data
+                        .attr("stroke", "black")
+                        .attr("stroke-width", 1)
+                        .attr("fill", "none"); // Set the fill to "none" to make it an outline
+                }
+
+                // Create box line for Denmark island (special case as island is also part of a mainland section)
                 if (country === 'dk') {
                     const squareCoordinates = [
                         [705, 470], // Top-left corner
@@ -643,11 +697,7 @@
                     ];
 
                     // Create an SVG path element for the square
-                    g.append("path")
-                        .attr("d", d3.line()(squareCoordinates)) // Use d3.line() to create the path data
-                        .attr("stroke", "black")
-                        .attr("stroke-width", 1)
-                        .attr("fill", "none"); // Set the fill to "none" to make it an outline
+                    addSquare(squareCoordinates);
                 }
                 
                 function addCircle(g, cx, cy, r) {

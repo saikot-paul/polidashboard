@@ -548,6 +548,30 @@ const pl = new Map([
     ["Silesian Voivodeship", 'PL.SL'],
 ]);
 
+const pt = new Map([ 
+    ["Unknown", "N/A"],
+    ["Leiria District", 'PT.LE'],
+    ["Viseu District", 'PT.VI'],
+    ["Vila Real District", 'PT.VR'],
+    ["Viana do Castelo District", 'PT.VC'],
+    ["Setúbal District", 'PT.SE'],
+    ["Santarém District", 'PT.SA'],
+    ["Porto District", 'PT.PO'],
+    ["Portalegre District", 'PT.PA'],
+    ["Lisbon District", 'PT.LI'],
+    ["Guarda District", 'PT.GU'],
+    ["Aveiro District", 'PT.AV'],
+    ["Madeira", 'PT.MA'],
+    ["Faro District", 'PT.FA'],
+    ["Évora District", 'PT.EV'],
+    ["Coimbra District", 'PT.CO'],
+    ["Castelo Branco District", 'PT.CB'],
+    ["Braganca", 'PT.BA'],
+    ["Braga District", 'PT.BR'],
+    ["Beja District", 'PT.BE'],
+    ["Azores", 'PT.AC'],
+]);
+
 const us = new Map([
     ["Unknown", "N/A"],
     ["Alabama", "01"],
@@ -633,6 +657,7 @@ const maps = {
     'nl': nl,
     'ph': ph,
     'pl': pl,
+    'pt': pt,
     'us': us,
     // ^^^ add defined maps here
 }

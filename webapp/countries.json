@@ -270,6 +270,14 @@
         "regions": {}
     },
     {
+        "name": "Portugal",
+        "code": "pt",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Spain",
         "code": "es",
         "first date": "15-10-2023",
