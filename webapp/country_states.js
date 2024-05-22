@@ -330,6 +330,36 @@ const hu = new Map([
     ["Szabolcs-Szatmár-Bereg County", "HU.SZ"],
 ]);
 
+const ie = new Map([
+    ["Unknown", "N/A"],
+    ["Kilkenny", "Kilkenny"],
+    ["County Tipperary", "Tipperary"],
+    ["Waterford", "Waterford"],
+    ["Wexford", "Wexford"],
+    ["Wicklow", "Wicklow"],
+    ["Galway", "Galway"],
+    ["County Mayo", "Mayo"],
+    ["Cavan", "Cavan"],
+    ["Donegal", "Donegal"],
+    ["Kildare", "Kildare"],
+    ["County Leitrim", "Leitrim"],
+    ["County Laois", "Laois"],
+    ["County Longford", "Longford"],
+    ["County Louth", "Louth"],
+    ["County Meath", "Meath"],
+    ["County Monaghan", "Monaghan"],
+    ["County Offaly", "Offaly"],
+    ["Roscommon", "Roscommon"],
+    ["Sligo", "Sligo"],
+    ["County Westmeath", "Westmeath"],
+    ["Dublin", "Dublin"],
+    ["Carlow", "Carlow"],
+    ["Limerick", "Limerick"],
+    ["Kerry", "Kerry"],
+    ["County Cork", "Cork"],
+    ["County Clare", "Clare"],
+]);
+
 const id = new Map([ 
     ["Unknown", "N/A"],
     ["Aceh", "ID.AC"], // #1 (In GeometryCollection object)
@@ -546,6 +576,7 @@ const maps = {
     'gr': gr,
     'hr': hr,
     'hu': hu,
+    'ie': ie,
     'id': id,
     'in': ind,
     'it': it,

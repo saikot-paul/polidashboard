@@ -190,6 +190,14 @@
         "regions": {}
     },
     {
+        "name": "Ireland",
+        "code": "ie",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "India",
         "code": "in",
         "first date": "15-10-2023",

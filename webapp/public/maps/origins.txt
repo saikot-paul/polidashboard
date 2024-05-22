@@ -23,3 +23,4 @@ GE: https://code.highcharts.com/mapdata/countries/ge/ge-all.topo.json
 GR: https://code.highcharts.com/mapdata/countries/gr/gr-all.topo.json
 HR: https://code.highcharts.com/mapdata/countries/hr/hr-all.topo.json
 HU: https://github.com/wuerdo/geoHungary/blob/master/counties.geojson
+IE: https://gist.githubusercontent.com/carsonfarmer/9791524/raw/b27ca0d78d46a84664fe7ef709eed4f7621f7a25/irish-counties.topojson
