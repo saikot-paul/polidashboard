@@ -643,6 +643,22 @@ const se = new Map([
     ["Västra Götaland County", "SE.VG"],
 ]);
 
+const si = new Map([ 
+    ["Unknown", "N/A"],
+    ["Mura Statistical Region", 11],
+    ["Drava Statistical Region", 12],
+    ["Carinthia Statistical Region", 13],
+    ["Savinja Statistical Region", 14],
+    ["Central Sava Statistical Region", 15],
+    ["Lower Sava Statistical Region", 16],
+    ["Southeast Slovenia Statistical Region", 17],
+    ["Littoral–Inner Carniola Statistical Region", 18],
+    ["Central Slovenia Statistical Region", 21],
+    ["Upper Carniola Statistical Region", 22],
+    ["Goriška Statistical Region", 23],
+    ["Coastal–Karst Statistical Region", 24],
+]);
+
 const us = new Map([
     ["Unknown", "N/A"],
     ["Alabama", "01"],
@@ -731,6 +747,7 @@ const maps = {
     'pt': pt,
     'ro': ro,
     'se': se,
+    'si': si,
     'us': us,
     // ^^^ add defined maps here
 }
