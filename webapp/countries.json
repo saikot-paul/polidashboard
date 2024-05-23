@@ -294,6 +294,14 @@
         "regions": {}
     },
     {
+        "name": "Slovakia",
+        "code": "sk",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Slovenia",
         "code": "si",
         "first date": "15-10-2023",

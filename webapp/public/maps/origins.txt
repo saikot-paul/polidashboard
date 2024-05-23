@@ -32,3 +32,4 @@ PT: https://code.highcharts.com/mapdata/countries/pt/pt-all.topo.json
 RO: https://code.highcharts.com/mapdata/countries/ro/ro-all.topo.json
 SE: https://code.highcharts.com/mapdata/countries/se/se-all.topo.json
 SI: https://github.com/cufarvid/slovenia-topo/blob/main/data/regions.json
+SK: https://code.highcharts.com/mapdata/countries/sk/sk-all.topo.json

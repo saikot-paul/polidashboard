@@ -659,6 +659,18 @@ const si = new Map([
     ["Coastal–Karst Statistical Region", 24],
 ]);
 
+const sk = new Map([ 
+    ["Unknown", "N/A"],
+    ["Bratislava Region", "SK.BL"],
+    ["Trnava Region", "SK.TA"],
+    ["Trenčín Region", "SK.TC"],
+    ["Nitra Region", "SK.NI"],
+    ["Žilina Region", "SK.ZI"],
+    ["Banská Bystrica Region", "SK.BC"],
+    ["Presov", "SK.PV"],
+    ["Košice Region", "SK.KI"],
+]);
+
 const us = new Map([
     ["Unknown", "N/A"],
     ["Alabama", "01"],
@@ -748,6 +760,7 @@ const maps = {
     'ro': ro,
     'se': se,
     'si': si,
+    'sk': sk,
     'us': us,
     // ^^^ add defined maps here
 }
