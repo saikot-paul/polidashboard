@@ -618,6 +618,31 @@ const ro = new Map([
     ["Constanța County", 'RO.CT'],
 ]);
 
+const se = new Map([ 
+    ["Unknown", "N/A"],
+    ["Blekinge County", "SE.BL"],
+    ["Östergötland County", "SE.OG"],
+    ["Skåne County", "SE.SN"],
+    ["Stockholm County", "SE.ST"],
+    ["Västmanland County", "SE.VM"],
+    ["Västernorrland County", "SE.VN"],
+    ["Västerbotten County", "SE.VB"],
+    ["Värmland County", "SE.VR"],
+    ["Uppsala County", "SE.UP"],
+    ["Södermanland County", "SE.SD"],
+    ["Örebro County", "SE.OR"],
+    ["Gävleborg County", "SE.GV"],
+    ["Norrbotten County", "SE.NB"],
+    ["Kronoberg County", "SE.KR"],
+    ["Dalarna County", "SE.KO"],
+    ["Kalmar County", "SE.KA"],
+    ["Jönköping County", "SE.JO"],
+    ["Jämtland County", "SE.JA"],
+    ["Halland County", "SE.HA"],
+    ["Gotland County", "SE.GT"],
+    ["Västra Götaland County", "SE.VG"],
+]);
+
 const us = new Map([
     ["Unknown", "N/A"],
     ["Alabama", "01"],
@@ -705,6 +730,7 @@ const maps = {
     'pl': pl,
     'pt': pt,
     'ro': ro,
+    'se': se,
     'us': us,
     // ^^^ add defined maps here
 }
