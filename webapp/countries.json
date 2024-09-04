@@ -246,6 +246,14 @@
         "regions": {}
     },
     {
+        "name": "Nigeria",
+        "code": "ng",
+        "first date": "15-10-2023",
+        "currency": "NGN",
+        "currency symbol": "₦",
+        "regions": {}
+    },
+    {
         "name": "Netherlands",
         "code": "nl",
         "first date": "15-10-2023",
