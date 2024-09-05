@@ -1137,7 +1137,7 @@ hr {
     border: 1px solid black;
     border-radius: 5px;
     max-width: 280px;
-    width: 254px;
+    width: 263px;
     text-align: center;
     align-items: center;
 }
@@ -1232,12 +1232,12 @@ hr {
 }
   
 .country-select.inside {
-    width: 254px;
-	min-width: 254px;
+    width: 263px;
+	min-width: 263px;
 }
 
 .country-select.inside .selected-flag {
-    width: 254px;
+    width: 263px;
 	border-radius: 3px;
 }
 
