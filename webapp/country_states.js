@@ -767,6 +767,19 @@ const us = new Map([
     ["Wyoming", "56"]
 ]);
 
+const za = new Map([ 
+    ["Unknown", "N/A"],
+    ["Northern Cape", "ZA.NC"],
+    ["Western Cape", "ZA.WC"],
+    ["Eastern Cape", "ZA.EC"],
+    ["North West", "ZA.NW"],
+    ["Limpopo", "ZA.NP"],
+    ["Mpumalanga", "ZA.MP"],
+    ["Gauteng", "ZA.GT"],
+    ["Free State", "ZA.FS"],
+    ["KwaZulu-Natal", "ZA.NL"],
+]);
+
 // ^^^ Add more map key-value pairs above here, name maps as their 2 character country code
 
 const maps = {
@@ -804,6 +817,7 @@ const maps = {
     'si': si,
     'sk': sk,
     'us': us,
+    'za': za,
     // ^^^ add defined maps here
 }
 
