@@ -125,6 +125,14 @@
         "regions": {}
     },
     {
+        "name": "Egypt",
+        "code": "eg",
+        "first date": "15-10-2023",
+        "currency": "EGP",
+        "currency symbol": "E£",
+        "regions": {}
+    },
+    {
         "name": "Finland",
         "code": "fi",
         "first date": "15-10-2023",
