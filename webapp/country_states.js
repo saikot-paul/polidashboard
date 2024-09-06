@@ -95,6 +95,21 @@ const ca = new Map([
     ["Prince Edward Island", "CA.PE"],
 ]);
 
+const cd = new Map([
+    ["Unknown", "N/A"],
+    ["Kinshasa", "CD.KN"],
+    ["Bas-Congo", "CD.BC"],
+    ["Bandundu", "CD.BN"],
+    ["Equateur", "CD.EQ"],
+    ["Orientale", "CD.HC"],
+    ["Nord-Kivu", "CD.1697"],
+    ["Kasai-Occidental", "CD.KC"],
+    ["Kasai-Oriental", "CD.KR"],
+    ["Maniema", "CD.1694"],
+    ["Sud-Kivu", "CD.KV"],
+    ["Katanga", "CD.KT"],
+]);
+
 const cz = new Map([
     ["Unknown", "N/A"],
     ["Karlovy Vary Region", "CZ.KK"],
@@ -819,6 +834,7 @@ const maps = {
     'be': be,
     'br': br,
     'ca': ca,
+    'cd': cd,
     'cz': cz,
     'de': de,
     'dk': dk,

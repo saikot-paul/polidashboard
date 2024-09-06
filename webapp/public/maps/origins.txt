@@ -7,6 +7,7 @@ BR: https://code.highcharts.com/mapdata/countries/br/br-all.topo.json
 AU: https://code.highcharts.com/mapdata/countries/au/au-all.topo.json
 AT: https://code.highcharts.com/mapdata/countries/at/at-all.topo.json
 BE: https://code.highcharts.com/mapdata/countries/be/be-all.topo.json
+CD: https://code.highcharts.com/mapdata/countries/cd/cd-all.topo.json
 ES: https://unpkg.com/es-atlas@0.5.0/es/autonomous_regions.json
 EG: https://code.highcharts.com/mapdata/countries/eg/eg-all.topo.json
 IT: https://github.com/openpolis/geojson-italy/blob/master/topojson/limits_IT_regions.topo.json
