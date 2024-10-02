@@ -6,12 +6,36 @@ var _ = require('underscore');
 var countries = require('./countries.json');
 var countryStates = require('./country_states.js');
 const https = require("http") //https
+const path = require('path');
 
 var db = mongoose.connection.db
 
 router.get('/', function(req, res) {
     res.redirect('/facebook_ads_v2?country=ca')
 })
+
+
+const jsonFilePath = path.join(__dirname, 'countries.json');
+let countryCurrencyMap = {};
+
+try {
+  const data = fs.readFileSync(jsonFilePath, 'utf8');
+  const countries = JSON.parse(data);
+
+  // Create the dictionary
+  countries.forEach(country => {
+    if (country.code && country.currency) {
+      countryCurrencyMap[country.code] = country.currency;
+    }
+  });
+
+  console.log(countryCurrencyMap); // Output for testing
+} catch (err) {
+  console.error('Error reading the JSON file:', err);
+}
+
+// countryCurrencyMap is now accessible globally
+module.exports = countryCurrencyMap;
 
 router.get('/facebook_ads_v2', function (req, res) {
     var start = parseInt(req.query.startDay)
@@ -183,6 +207,8 @@ function generateHeatmap(start, end, country, res=null) {
         {
             '$match': quickDateFilter(start, end), 
         }, {
+            '$match': {'currency': countryCurrencyMap[country]}, 
+        }, {
             '$group': {
             '_id': {
                 'funding_entity': '$funding_entity', 
@@ -318,6 +344,8 @@ function generateFunderPages(start, end, funder, country, res=null) {
         {
           '$match': quickDateFilter(start, end)
         }, {
+            '$match': {'currency': countryCurrencyMap[country]}, 
+        }, {
           '$match': {
             'funding_entity': funder
           }
@@ -394,6 +422,9 @@ function generateFunderDemographics(start, end, funder, country, res=null) {
             }
         },
         {
+            '$match': {'currency': countryCurrencyMap[country]}, 
+        },
+        {
             '$lookup': {
                 'from': 'facebook_demographics_' + country,
                 'localField': '_id',
@@ -455,6 +486,8 @@ function generateFunderTimeline(start, end, funder, country, res) {
         {
             '$match': quickDateFilter(start, end)
         }, {
+            '$match': {'currency': countryCurrencyMap[country]}, 
+        }, {
             '$match': {
                 'funding_entity': funder
             }
@@ -491,6 +524,9 @@ async function generateFunderMap(start, end, funder, country, page_id, res) {
             }
         },
         {
+            '$match': {'currency': countryCurrencyMap[country]}, 
+        },
+        {
             '$project': {
                 'spend': 1,
                 'delivery_by_region': 1
@@ -506,6 +542,9 @@ async function generateFunderMap(start, end, funder, country, page_id, res) {
                     'funding_entity': funder,
                     'page_id': page_id
                 }
+            },
+            {
+                '$match': {'currency': countryCurrencyMap[country]}, 
             },
             {
                 '$project': {
@@ -610,6 +649,8 @@ async function fetchAds(db, country, funding_entity, page_id, start, end) {
             '$match': {
                 ...quickDateFilter(start, end),
             }
+        }, {
+            '$match': {'currency': countryCurrencyMap[country]}, 
         }, {
             '$match': {
               'funding_entity': funding_entity
