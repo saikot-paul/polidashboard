@@ -71,6 +71,14 @@
 
     },
     {
+        "name": "Bulgaria",
+        "code": "bg",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Canada",
         "code": "ca",
         "first date": "15-10-2023",

@@ -47,6 +47,13 @@ const be = new Map([
     ["Wallonia", "WAL"], 
 ]);
 
+const bg = new Map([
+    ["Unknown", "N/A"],
+    ["Flemish Region", "VLG"], 
+    ["Brussels", "BRU"], 
+    ["Wallonia", "WAL"], 
+]);
+
 const br = new Map([
     ["Unknown", "N/A"],
     ["Acre (state)", "BR.AC"], 
@@ -732,6 +739,7 @@ const maps = {
     'at': at,
     'au': au,
     'be': be,
+    'bg': bg,
     'br': br,
     'ca': ca,
     'cz': cz,
