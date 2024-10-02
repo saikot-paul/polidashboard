@@ -32,6 +32,14 @@
         "regions": {}
     },
     {
+        "name": "Bulgaria",
+        "code": "bg",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Canada",
         "code": "ca",
         "first date": "10-10-2023",
@@ -43,6 +51,14 @@
         "name": "Croatia",
         "code": "hr",
         "first date": "10-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "Cyprus",
+        "code": "cy",
+        "first date": "15-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}

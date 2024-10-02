@@ -47,6 +47,38 @@ const be = new Map([
     ["Wallonia", "WAL"], 
 ]);
 
+const bg = new Map([
+    ["Unknown", "N/A"],
+    ["Montana Province", "BG.MT"],
+    ["Vidin Province", "BG.VD"],
+    ["Vratsa Province", "BG.VR"],
+    ["Sofia Province", "BG.SF"],
+    ["Sofia City Province", "BG.SG"],
+    ["Pernik Province", "BG.PN"],
+    ["Kyustendil Province", "BG.KY"],
+    ["Blagoevgrad Province", "BG.BL"],
+    ["Pazardzhik Province", "BG.PZ"],
+    ["Smolyan Province", "BG.SM"],
+    ["Pleven Province", "BG.PV"],
+    ["Lovech Province", "BG.LV"],
+    ["Plovdiv Province", "BG.PD"],
+    ["Kardzhali Province", "BG.KZ"],
+    ["Veliko Tarnovo Province", "BG.VT"],
+    ["Gabrovo Province", "BG.GB"],
+    ["Stara Zagora Province", "BG.SZ"],
+    ["Haskovo Province", "BG.KK"],
+    ["Ruse Province", "BG.RS"],
+    ["Targovishte Province", "BG.TU"],
+    ["Sliven Province", "BG.SL"],
+    ["Yambol Province", "BG.YA"],
+    ["Razgrad Province", "BG.RG"],
+    ["Silistra Province", "BG.SI"],
+    ["Shumen Province", "BG.SH"],
+    ["Burgas Province", "BG.BR"],
+    ["Dobrich Province", "BG.DO"],
+    ["Varna Province", "BG.VN"],
+]);
+
 const br = new Map([
     ["Unknown", "N/A"],
     ["Acre (state)", "BR.AC"], 
@@ -93,6 +125,16 @@ const ca = new Map([
     ["New Brunswick", "CA.NB"],
     ["Yukon", "CA.YT"],
     ["Prince Edward Island", "CA.PE"],
+]);
+
+const cy = new Map([
+    ["Unknown", "N/A"],
+    ["Paphos District", "CY.PA"],
+    ["Nicosia District", "CY.NI"],
+    ["Kyrenia District", "CY.KY"],
+    ["Limassol District", "CY.LI"],
+    ["Larnaca District", "CY.LA"],
+    ["Famagusta District", "CY.FA"],
 ]);
 
 const cz = new Map([
@@ -732,8 +774,10 @@ const maps = {
     'at': at,
     'au': au,
     'be': be,
+    'bg': bg,
     'br': br,
     'ca': ca,
+    'cy': cy,
     'cz': cz,
     'de': de,
     'dk': dk,
