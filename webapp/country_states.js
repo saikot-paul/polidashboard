@@ -127,6 +127,16 @@ const ca = new Map([
     ["Prince Edward Island", "CA.PE"],
 ]);
 
+const cy = new Map([
+    ["Unknown", "N/A"],
+    ["Paphos District", "CY.PA"],
+    ["Nicosia District", "CY.NI"],
+    ["Kyrenia District", "CY.KY"],
+    ["Limassol District", "CY.LI"],
+    ["Larnaca District", "CY.LA"],
+    ["Famagusta District", "CY.FA"],
+]);
+
 const cz = new Map([
     ["Unknown", "N/A"],
     ["Karlovy Vary Region", "CZ.KK"],
@@ -767,6 +777,7 @@ const maps = {
     'bg': bg,
     'br': br,
     'ca': ca,
+    'cy': cy,
     'cz': cz,
     'de': de,
     'dk': dk,

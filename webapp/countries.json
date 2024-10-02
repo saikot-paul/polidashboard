@@ -109,6 +109,14 @@
         "regions": {}
     },
     {
+        "name": "Cyprus",
+        "code": "cy",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Czechia",
         "code": "cz",
         "first date": "15-10-2023",
