@@ -183,7 +183,7 @@
 						<div class="dropdown-content dropdown-content-navigation" style="display:none; border: 1px solid lightgrey; box-shadow: none; padding: 0px;">
 							<div class="navigation-instructions" id="right-navigation-instructions">
 								<p id="tiptext-map"></p>
-								<ul>
+								<ul id="learnmore-map">
 									<li>Hover over any location on the map to view what percentages of an advertiser’s ad audience came from that location.</li>
 									<li>For every social issues, elections or politics related ad, Meta provides a detailed breakdown of the location(s) of the ad’s audience as a percentage of the total audience. For example, for a hypothetical Ad #1, Meta will report what percentage of the total audience came from each of the various locations where the ad was shown.</li>
 									<li>Meta assigned people’s location based on where they or their device connected to the internet and/or based on information in their account profile.</li>
@@ -535,9 +535,8 @@
 		});
 
 		performRequest('/facebook_ads_v2/funder_map', commonData, data => {
-			// drawMap(data);
 			mapData = data;
-			rawMap = new Statemap(data, "chart-container", country, mainFunder); // TO DO
+			rawMap = new Statemap(data, "chart-container", country, mainFunder);
 			prevRawMap = rawMap;
 		});
 
@@ -667,6 +666,7 @@
 		d3.select('#funder_pages_loader').style('display', 'block');
 		d3.select('#demographics_loader').style('display', 'block');
 		d3.select('#timeline_loader').style('display', 'block');
+		d3.select('#chart-container').html('<div id="map-tooltip"><div id="map-close"></div></div>');
 		d3.select('#map_loader').style('display', 'block');	
 		d3.select('#wordmap_loader').style('display', 'none'); // User has to select an option before the loader becomes visible
 		d3.select('#funder_pages').html('');
@@ -728,7 +728,7 @@
 		d3.select('#map_loader').style('display', 'block')
 		d3.select('#timeline').html('')
 		
-		d3.select("#chart-container").style("display", "none")
+		d3.select('#chart-container').html('<div id="map-tooltip"><div id="map-close"></div></div>');
 		d3.select('#regions_loader').style('display', 'block')
 		
 		$([document.documentElement, document.body]).animate({
@@ -774,7 +774,6 @@
 				performRequest('/facebook_ads_v2/funder_map', commonData, data => {
 					rawMap = new Statemap(data, "chart-container", country, mainFunder, p.page_name);
 				});
-				//drawMap(pageFilter(mapData))
 			} catch (err) {
 				console.log(err);
 			}

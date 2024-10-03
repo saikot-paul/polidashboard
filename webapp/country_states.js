@@ -47,6 +47,38 @@ const be = new Map([
     ["Wallonia", "WAL"], 
 ]);
 
+const bg = new Map([
+    ["Unknown", "N/A"],
+    ["Montana Province", "BG.MT"],
+    ["Vidin Province", "BG.VD"],
+    ["Vratsa Province", "BG.VR"],
+    ["Sofia Province", "BG.SF"],
+    ["Sofia City Province", "BG.SG"],
+    ["Pernik Province", "BG.PN"],
+    ["Kyustendil Province", "BG.KY"],
+    ["Blagoevgrad Province", "BG.BL"],
+    ["Pazardzhik Province", "BG.PZ"],
+    ["Smolyan Province", "BG.SM"],
+    ["Pleven Province", "BG.PV"],
+    ["Lovech Province", "BG.LV"],
+    ["Plovdiv Province", "BG.PD"],
+    ["Kardzhali Province", "BG.KZ"],
+    ["Veliko Tarnovo Province", "BG.VT"],
+    ["Gabrovo Province", "BG.GB"],
+    ["Stara Zagora Province", "BG.SZ"],
+    ["Haskovo Province", "BG.KK"],
+    ["Ruse Province", "BG.RS"],
+    ["Targovishte Province", "BG.TU"],
+    ["Sliven Province", "BG.SL"],
+    ["Yambol Province", "BG.YA"],
+    ["Razgrad Province", "BG.RG"],
+    ["Silistra Province", "BG.SI"],
+    ["Shumen Province", "BG.SH"],
+    ["Burgas Province", "BG.BR"],
+    ["Dobrich Province", "BG.DO"],
+    ["Varna Province", "BG.VN"],
+]);
+
 const br = new Map([
     ["Unknown", "N/A"],
     ["Acre (state)", "BR.AC"], 
@@ -108,6 +140,16 @@ const cd = new Map([
     ["Maniema", "CD.1694"],
     ["Sud-Kivu", "CD.KV"],
     ["Katanga", "CD.KT"],
+]);
+
+const cy = new Map([
+    ["Unknown", "N/A"],
+    ["Paphos District", "CY.PA"],
+    ["Nicosia District", "CY.NI"],
+    ["Kyrenia District", "CY.KY"],
+    ["Limassol District", "CY.LI"],
+    ["Larnaca District", "CY.LA"],
+    ["Famagusta District", "CY.FA"],
 ]);
 
 const cz = new Map([
@@ -536,6 +578,16 @@ const lv = new Map([
     ["Vidzeme", "Vidzeme"],
 ]);
 
+const mt = new Map([
+    ["Unknown", "N/A"],
+    ["Northern Region", "Northern"], 
+    ["Central Region", "Central"], 
+    ["Gozo", "Gozo"], 
+    ["South Eastern Region", "South Eastern"], 
+    // Meta's data should have Southern Region as well, but for some reason it doesn't
+    // If in the future it is added properly, make sure to include it here
+]);
+
 const ng = new Map([
     ["Unknown", "N/A"],
     ["Sokoto State", "NG.SO"],
@@ -832,9 +884,11 @@ const maps = {
     'at': at,
     'au': au,
     'be': be,
+    'bg': bg,
     'br': br,
     'ca': ca,
     'cd': cd,
+    'cy': cy,
     'cz': cz,
     'de': de,
     'dk': dk,
@@ -855,6 +909,7 @@ const maps = {
     'lt': lt,
     'lu': lu,
     'lv': lv,
+    'mt': mt,
     'ng': ng,
     'nl': nl,
     'ph': ph,

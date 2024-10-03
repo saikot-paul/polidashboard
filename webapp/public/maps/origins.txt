@@ -37,3 +37,5 @@ SE: https://code.highcharts.com/mapdata/countries/se/se-all.topo.json
 SI: https://github.com/cufarvid/slovenia-topo/blob/main/data/regions.json
 SK: https://code.highcharts.com/mapdata/countries/sk/sk-all.topo.json
 ZA: https://code.highcharts.com/mapdata/countries/za/za-all.topo.json
+BG: https://code.highcharts.com/mapdata/countries/bg/bg-all.topo.json
+CY: https://github.com/dtrihinas/cyprus-geojson/blob/master/cyprus.geojson  # Modified with mapshaper (https://mapshaper.org/) adding FID's

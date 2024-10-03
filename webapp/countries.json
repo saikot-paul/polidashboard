@@ -2,25 +2,15 @@
     {
         "name": "Australia",
         "code": "au",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "AUD",
         "currency symbol": "$",
-        "regions": {
-            "Australian Capital Territory":  "ACT",
-            "Jervis Bay Territory": "JBT",
-            "New South Wales": "NSW",
-            "Northern Territory": "NT",
-            "Queensland": "QLD",
-            "South Australia": "SA",
-            "Tasmania": "TAS",
-            "Victoria": "VIC",
-            "Western Australia": "WA"
-        }
+        "regions": {}
     },
     {
         "name": "Austria",
         "code": "at",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -28,7 +18,7 @@
     {
         "name": "Belgium",
         "code": "be",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -36,65 +26,38 @@
     {
         "name": "Brazil",
         "code": "br",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "BRL",
         "currency symbol": "R$",
-        "regions": {
-            "Acre (state)":"AC",
-            "Alagoas":"AL",
-            "Amapá":"AP",
-            "Amazonas":"AM",
-            "Bahia":"BA",
-            "Ceará":"CE",
-            "Distrito Federal":"DF",
-            "Espírito Santo":"ES",
-            "Goiás":"GO",
-            "Maranhão":"MA",
-            "Mato Grosso":"MT",
-            "Mato Grosso do Sul":"MS",
-            "Minas Gerais":"MG",
-            "Pará":"PA",
-            "Paraíba":"PB",
-            "Paraná":"PR",
-            "Pernambuco":"PE",
-            "Piauí":"PI",
-            "Rio de Janeiro (state)":"RJ",
-            "Rio Grande do Norte":"RN",
-            "Rio Grande do Sul":"RS",
-            "Rondônia":"RO",
-            "Roraima":"RR",
-            "Santa Catarina":"SC",
-            "São Paulo (state)":"SP",
-            "Sergipe":"SE",
-            "Tocantins":"TO"
-        }
-
+        "regions": {}
+    },
+    {
+        "name": "Bulgaria",
+        "code": "bg",
+        "first date": "15-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
     },
     {
         "name": "Canada",
         "code": "ca",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency symbol": "$",
         "currency": "CAD",
-        "regions": {
-            "Ontario": "ON",
-            "Prince Edward Island": "PE",
-            "Nova Scotia": "NS",
-            "Quebec": "QC",
-            "Alberta": "AB",
-            "British Columbia": "BC",
-            "Manitoba": "MB",
-            "Saskatchewan": "SK",
-            "New Brunswick": "NB",
-            "Newfoundland and Labrador": "NL",
-            "Northwest Territories": "NT",
-            "Nunavut": "NU",
-            "Yukon": "YT"
-        }
+        "regions": {}
     },
     {
         "name": "Croatia",
         "code": "hr",
+        "first date": "10-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "Cyprus",
+        "code": "cy",
         "first date": "15-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
@@ -111,7 +74,7 @@
     {
         "name": "Czechia",
         "code": "cz",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "CZK",
         "currency symbol": "CZK",
         "regions": {}
@@ -119,7 +82,7 @@
     {
         "name": "Denmark",
         "code": "dk",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "DKK",
         "currency symbol": "Kr.",
         "regions": {}
@@ -127,7 +90,7 @@
     {
         "name": "Estonia",
         "code": "ee",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -143,7 +106,7 @@
     {
         "name": "Finland",
         "code": "fi",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -151,7 +114,7 @@
     {
         "name": "France",
         "code": "fr",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -159,7 +122,7 @@
     {
         "name": "Georgia",
         "code": "ge",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "USD",
         "currency symbol": "$",
         "regions": {}
@@ -167,32 +130,15 @@
     {
         "name": "Germany",
         "code": "de",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
-        "regions": {
-            "Baden-Württemberg":"Baden-Württemberg",
-            "Bavaria":"Bavaria",
-            "Berlin":"Berlin",
-            "Brandenburg":"Brandenburg",
-            "Bremen":"Bremen",
-            "Hamburg":"Hamburg",
-            "Hesse":"Hesse",
-            "Mecklenburg-Vorpommern":"Mecklenburg-Vorpommern",
-            "Lower Saxony":"Lower_Saxony",
-            "North Rhine-Westphalia":"North Rhine-Westphalia",
-            "Rhineland-Palatinate":"Rhineland-Palatinate",
-            "Saarland":"Saarland",
-            "Saxony":"Saxony",
-            "Saxony-Anhalt":"Saxony-Anhalt",
-            "Schleswig-Holstein":"Schleswig-Holstein",
-            "Thuringia":"Thuringia"
-        }
+        "regions": {}
     },
     {
         "name": "Greece",
         "code": "gr",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -200,7 +146,7 @@
     {
         "name": "Hungary",
         "code": "hu",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "HUF",
         "currency symbol": "Ft",
         "regions": {}
@@ -208,7 +154,7 @@
     {
         "name": "Ireland",
         "code": "ie",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -216,7 +162,7 @@
     {
         "name": "India",
         "code": "in",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "INR",
         "currency symbol": "₹",
         "regions": {}
@@ -224,7 +170,7 @@
     {
         "name": "Indonesia",
         "code": "id",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "IDR",
         "currency symbol": "Rp",
         "regions": {}
@@ -232,7 +178,7 @@
     {
         "name": "Italy",
         "code": "it",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -240,7 +186,7 @@
     {
         "name": "Latvia",
         "code": "lv",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -248,7 +194,7 @@
     {
         "name": "Lithuania",
         "code": "lt",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -256,7 +202,15 @@
     {
         "name": "Luxembourg",
         "code": "lu",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "Malta",
+        "code": "mt",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -272,7 +226,7 @@
     {
         "name": "Netherlands",
         "code": "nl",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -280,7 +234,7 @@
     {
         "name": "Philippines",
         "code": "ph",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "PHP",
         "currency symbol": "₱",
         "regions": {}
@@ -288,15 +242,15 @@
     {
         "name": "Poland",
         "code": "pl",
-        "first date": "15-10-2023",
-        "currency": "EUR",
-        "currency symbol": "€",
+        "first date": "10-10-2023",
+        "currency": "PLN",
+        "currency symbol": "zł",
         "regions": {}
     },
     {
         "name": "Portugal",
         "code": "pt",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -304,7 +258,7 @@
     {
         "name": "Romania",
         "code": "ro",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "RON",
         "currency symbol": "lei",
         "regions": {}
@@ -312,7 +266,7 @@
     {
         "name": "Spain",
         "code": "es",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -320,7 +274,7 @@
     {
         "name": "Slovakia",
         "code": "sk",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -328,7 +282,7 @@
     {
         "name": "Slovenia",
         "code": "si",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
         "regions": {}
@@ -336,7 +290,7 @@
     {
         "name": "Sweden",
         "code": "se",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "SEK",
         "currency symbol": "SEK",
         "regions": {}
@@ -344,88 +298,17 @@
     {
         "name": "United Kingdom",
         "code": "gb",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "GBP",
         "currency symbol": "£",
-        "regions": {
-            "England": "England",
-            "Scotland": "Scotland",
-            "Wales": "Wales",
-            "Northern Ireland": "Northern Ireland"
-        }
+        "regions": {}
     },
     {
         "name": "United States",
         "code": "us",
-        "first date": "15-10-2023",
+        "first date": "10-10-2023",
         "currency": "USD",
         "currency symbol": "$",
-        "regions": {
-            "Alabama": "AL",
-            "Alaska": "AK",
-            "Arizona": "AZ",
-            "Arkansas": "AR",
-            "California": "CA",
-            "Colorado": "CO",
-            "Connecticut": "CT",
-            "Delaware": "DE",
-            "Florida": "FL",
-            "Georgia": "GA",
-            "Hawaii": "HI",
-            "Idaho": "ID",
-            "Illinois": "IL",
-            "Indiana": "IN",
-            "Iowa": "IA",
-            "Kansas": "KS",
-            "Kentucky": "KY",
-            "Louisiana": "LA",
-            "Maine": "ME",
-            "Maryland": "MD",
-            "Massachusetts": "MA",
-            "Michigan": "MI",
-            "Minnesota": "MN",
-            "Mississippi": "MS",
-            "Missouri": "MO",
-            "Montana": "MT",
-            "Nebraska": "NE",
-            "Nevada": "NV",
-            "New Hampshire": "NH",
-            "New Jersey": "NJ",
-            "New Mexico": "NM",
-            "New York": "NY",
-            "North Carolina": "NC",
-            "North Dakota": "ND",
-            "Ohio": "OH",
-            "Oklahoma": "OK",
-            "Oregon": "OR",
-            "Pennsylvania": "PA",
-            "Rhode Island": "RI",
-            "South Carolina": "SC",
-            "South Dakota": "SD",
-            "Tennessee": "TN",
-            "Texas": "TX",
-            "Utah": "UT",
-            "Vermont": "VT",
-            "Virginia": "VA",
-            "Washington": "WA",
-            "West Virginia": "WV",
-            "Wisconsin": "WI",
-            "Wyoming": "WY",
-            "Washington, District of Columbia": "DC",
-            "American Samoa": "AS",
-            "Guam": "GU",
-            "Northern Mariana Islands": "MP",
-            "Puerto Rico": "PR",
-            "United States Minor Outlying Islands": "UM",
-            "U.S. Virgin Islands": "VI"
-        }
-    },
-    {
-        "name": "South Africa",
-        "code": "za",
-        "first date": "15-10-2023",
-        "currency": "ZAR",
-        "currency symbol": "R",
         "regions": {}
     }
 ]
