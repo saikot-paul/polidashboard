@@ -78,6 +78,128 @@
             }
         }
 
+        drawBackup() {
+            console.log("BACKUP!")
+            let _d = this.data
+            let _pageName = this.pageName
+            let _funder = this.funder
+            let _mapName = this.mapName
+            
+            const margin = { top: 20, right: 40, bottom: 40, left: 100 };
+		    var height = 400 - margin.top - margin.bottom
+            const width = d3.select(`#${_mapName}`).node().getBoundingClientRect().width - margin.right - margin.left;
+            
+            d3.select(`#${_mapName}`).html("");
+
+            const svg = d3.select(`#${_mapName}`)
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            const x = d3.scaleLinear()
+                .domain([0, 1])  // scales [0 > 1] to [0% > 100%]
+                .range([0, width]);
+
+            const y = d3.scaleBand()
+                .domain(_d.map(d => d.name))
+                .range([0, height])
+                .padding(1);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x).tickFormat(d3.format(".0%"))) // Format as percentage
+            
+            // wrap functino taken from: https://gist.github.com/mbostock/7555321
+            function wrap(text, width) {
+                text.each(function() {
+                    var text = d3.select(this),
+                        words = text.text().split(/\s+/).reverse(),
+                        word,
+                        line = [],
+                        lineNumber = 0,
+                        lineHeight = 1.1, // ems
+                        y = text.attr("y"),
+                        dy = parseFloat(text.attr("dy")),
+                        xOffset = -8,
+                        tspan = text.text(null).append("tspan").attr("x", xOffset).attr("y", y).attr("dy", dy + "em");
+                    while (word = words.pop()) {
+                    line.push(word);
+                    tspan.text(line.join(" "));
+                    if (tspan.node().getComputedTextLength() > width) {
+                        line.pop();
+                        tspan.text(line.join(" "));
+                        line = [word];
+                        tspan = text.append("tspan").attr("x", xOffset).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+                    }
+                    }
+                });
+            }
+
+            svg.append("g")
+                .call(d3.axisLeft(y).tickFormat(function(d) { return d; }))
+                .selectAll(".tick text")
+                .call(wrap, margin.left); // Apply the wrap function for cases of large region names
+            
+            // Generate lines for the lollipops
+            svg.selectAll(".line")
+                .data(_d)
+                .enter()
+                .append("line")
+                .attr("class", "line")
+                .attr("x1", x(0))
+                .attr("x2", d => x(d.value))
+                .attr("y1", d => y(d.name))
+                .attr("y2", d => y(d.name))
+                .attr("stroke", "black") 
+                .attr("stroke-width", 1)
+                .attr("transform", "translate(0, 0.5)");
+
+            // Generate circles for the lollipop
+            svg.selectAll(".circle")
+                .data(_d)
+                .enter()
+                .append("circle")
+                .attr("class", "circle")
+                .attr("cx", d => x(d.value))
+                .attr("cy", d => y(d.name))
+                .attr("r", 5);
+
+            // Text labels for values, position at the circle of lollipop
+            svg.selectAll(".label")
+                .data(_d)
+                .enter()
+                .append("text")
+                .attr("class", "label")
+                .attr("x", function(d) {
+                    if (d.value > 0.9) {
+                        return x(d.value) - 10;
+                    }
+                    return x(d.value) + 10;
+                })  
+                .attr("y", function(d) {
+                    if (d.value > 0.9) {
+                        return y(d.name) - 10;
+                    }
+                    return y(d.name);
+                })
+                .text(d => (d.value * 100).toFixed(2) + "%");
+            
+            svg.append("text")
+                .attr("transform", "translate(" + (width / 2) + " ," + (height + margin.top + 20) + ")")
+                .style("text-anchor", "middle")
+                .text("Averaged audience for ads, (in %)");
+
+            d3.select('#map_loader').style('display', 'none');
+
+            d3.select(`#${this.mapName}`)
+                .style("visibility", "visible")
+                .style("display", "flex");
+
+            d3.select("#learnmore-map li:first-child").html("<b style='font-weight: bold;'>Map is unavailable for this country</b>, the same data is reflected in the lollipop chart below.");
+        }
+
         draw() {  
             let _d = this.data
             let _pageName = this.pageName
@@ -780,7 +902,12 @@
                     .style("visibility", "visible")
                     .style("display", "flex");
 
-            });
+            }).catch(error => {
+                // Should a map not be present, default to drawing a Lollipop graph, handled in drawBackup()
+                console.error("Error fetching topo data:", error);
+                this.drawBackup();
+                return;
+            });;
 
             ////////////////////////////////////////
             // -- FINISHED PROCESSING MAP DATA -- //

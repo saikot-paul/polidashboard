@@ -532,6 +532,16 @@ const lv = new Map([
     ["Vidzeme", "Vidzeme"],
 ]);
 
+const mt = new Map([
+    ["Unknown", "N/A"],
+    ["Northern Region", "Northern"], 
+    ["Central Region", "Central"], 
+    ["Gozo", "Gozo"], 
+    ["South Eastern Region", "South Eastern"], 
+    // Meta's data should have Southern Region as well, but for some reason it doesn't
+    // If in the future it is added properly, make sure to include it here
+]);
+
 const nl = new Map([
     ["Unknown", "N/A"],
     ["Zeeland", "NL.ZE"],
@@ -797,6 +807,7 @@ const maps = {
     'lt': lt,
     'lu': lu,
     'lv': lv,
+    'mt': mt,
     'nl': nl,
     'ph': ph,
     'pl': pl,
