@@ -192,6 +192,14 @@
         "regions": {}
     },
     {
+        "name": "Malta",
+        "code": "mt",
+        "first date": "10-10-2023",
+        "currency": "EUR",
+        "currency symbol": "€",
+        "regions": {}
+    },
+    {
         "name": "Netherlands",
         "code": "nl",
         "first date": "10-10-2023",
