@@ -127,6 +127,21 @@ const ca = new Map([
     ["Prince Edward Island", "CA.PE"],
 ]);
 
+const cd = new Map([
+    ["Unknown", "N/A"],
+    ["Kinshasa", "CD.KN"],
+    ["Bas-Congo", "CD.BC"],
+    ["Bandundu", "CD.BN"],
+    ["Equateur", "CD.EQ"],
+    ["Orientale", "CD.HC"],
+    ["Nord-Kivu", "CD.1697"],
+    ["Kasai-Occidental", "CD.KC"],
+    ["Kasai-Oriental", "CD.KR"],
+    ["Maniema", "CD.1694"],
+    ["Sud-Kivu", "CD.KV"],
+    ["Katanga", "CD.KT"],
+]);
+
 const cy = new Map([
     ["Unknown", "N/A"],
     ["Paphos District", "CY.PA"],
@@ -202,6 +217,37 @@ const ee = new Map([
     ["Valga County", "EE.VG"], 
     ["Põlva County", "EE.PL"], 
     ["Võru County", "EE.VR"], 
+]);
+
+const eg = new Map([
+    ["Unknown", "N/A"],
+    ["Matrouh Governorate", "EG.MT"], 
+    ["New Valley Governorate", "EG.WJ"], 
+    ["Giza Governorate", "EG.JZ"], 
+    ["Minya Governorate", "EG.MN"], 
+    ["Asyut Governorate", "EG.AT"], 
+    ["Sohag Governorate", "EG.SJ"], 
+    ["Qena Governorate", "EG.QN"], 
+    ["Luxor Governorate", "EG.UQ"],
+    ["Aswan Governorate", "EG.AN"], 
+    ["Alexandria Governorate", "EG.IK"], 
+    ["Beheira Governorate", "EG.BH"], 
+    ["Faiyum Governorate", "EG.FY"], 
+    ["Beni Suef Governorate", "EG.BN"], 
+    ["Red Sea Governorate", "EG.BA"], 
+    ["Kafr el-Sheikh Governorate", "EG.KS"], 
+    ["Gharbia Governorate", "EG.GH"], 
+    ["Monufia Governorate", "EG.MF"], 
+    ["Dakahlia Governorate", "EG.DQ"], 
+    ["Qalyubia Governorate", "EG.QL"], 
+    ["Cairo Governorate", "EG.QH"], 
+    ["Damietta Governorate", "EG.DT"], 
+    ["Al Sharqia Governorate", "EG.SQ"], 
+    ["Port Said Governorate", "EG.BS"], 
+    ["Ismailia Governorate", "EG.IS"], 
+    ["Suez Governorate", "EG.SW"], 
+    ["North Sinai Governorate", "EG.SS"], 
+    ["South Sinai Governorate", "EG.JS"], 
 ]);
 
 const es = new Map([
@@ -542,6 +588,47 @@ const mt = new Map([
     // If in the future it is added properly, make sure to include it here
 ]);
 
+const ng = new Map([
+    ["Unknown", "N/A"],
+    ["Sokoto State", "NG.SO"],
+    ["Kebbi State", "NG.KE"],
+    ["Zamfara State", "NG.ZA"],
+    ["Katsina State", "NG.KT"],
+    ["Kano State", "NG.KN"],
+    ["Jigawa State", "NG.JI"],
+    ["Yobe State", "NG.YO"],
+    ["Borno State", "NG.BO"],
+    ["Niger State", "NG.NI"],
+    ["Kaduna State", "NG.KD"],
+    ["Bauchi State", "NG.BA"],
+    ["Gombe State", "NG.GO"],
+    ["Kwara State", "NG.KW"],
+    ["Federal Capital Territory", "NG.FC"],
+    ["Nassarawa State", "NG.NA"],
+    ["Plateau State", "NG.PL"],
+    ["Taraba State", "NG.TA"],
+    ["Adamawa State", "NG.AD"],
+    ["Oyo State", "NG.OY"],
+    ["Osun State", "NG.OS"],
+    ["Ekiti State", "NG.EK"],
+    ["Kogi State", "NG.KO"],
+    ["Benue State", "NG.BE"],
+    ["Ogun State", "NG.OG"],
+    ["Ondo State", "NG.ON"],
+    ["Edo State", "NG.ED"],
+    ["Lagos State", "NG.LA"],
+    ["Delta State", "NG.DE"],
+    ["Anambra State", "NG.AN"],
+    ["Enugu State", "NG.EN"],
+    ["Ebonyi State", "NG.EB"],
+    ["Cross River State", "NG.CR"],
+    ["Bayelsa State", "NG.BY"],
+    ["Rivers State", "NG.RI"],
+    ["Imo State", "NG.IM"],
+    ["Abia State", "NG.AB"],
+    ["Akwa Ibom State", "NG.AK"],
+]);
+
 const nl = new Map([
     ["Unknown", "N/A"],
     ["Zeeland", "NL.ZE"],
@@ -778,6 +865,19 @@ const us = new Map([
     ["Wyoming", "56"]
 ]);
 
+const za = new Map([ 
+    ["Unknown", "N/A"],
+    ["Northern Cape", "ZA.NC"],
+    ["Western Cape", "ZA.WC"],
+    ["Eastern Cape", "ZA.EC"],
+    ["North West", "ZA.NW"],
+    ["Limpopo", "ZA.NP"],
+    ["Mpumalanga", "ZA.MP"],
+    ["Gauteng", "ZA.GT"],
+    ["Free State", "ZA.FS"],
+    ["KwaZulu-Natal", "ZA.NL"],
+]);
+
 // ^^^ Add more map key-value pairs above here, name maps as their 2 character country code
 
 const maps = {
@@ -787,11 +887,13 @@ const maps = {
     'bg': bg,
     'br': br,
     'ca': ca,
+    'cd': cd,
     'cy': cy,
     'cz': cz,
     'de': de,
     'dk': dk,
     'ee': ee,
+    'eg': eg,
     'es': es,
     'fi': fi,
     'fr': fr,
@@ -808,6 +910,7 @@ const maps = {
     'lu': lu,
     'lv': lv,
     'mt': mt,
+    'ng': ng,
     'nl': nl,
     'ph': ph,
     'pl': pl,
@@ -817,6 +920,7 @@ const maps = {
     'si': si,
     'sk': sk,
     'us': us,
+    'za': za,
     // ^^^ add defined maps here
 }
 

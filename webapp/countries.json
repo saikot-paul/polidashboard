@@ -64,6 +64,14 @@
         "regions": {}
     },
     {
+        "name": "DR Congo",
+        "code": "cd",
+        "first date": "15-10-2023",
+        "currency": "USD",
+        "currency symbol": "$",
+        "regions": {}
+    },
+    {
         "name": "Czechia",
         "code": "cz",
         "first date": "10-10-2023",
@@ -85,6 +93,14 @@
         "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "Egypt",
+        "code": "eg",
+        "first date": "15-10-2023",
+        "currency": "EGP",
+        "currency symbol": "E£",
         "regions": {}
     },
     {
@@ -200,6 +216,14 @@
         "regions": {}
     },
     {
+        "name": "Nigeria",
+        "code": "ng",
+        "first date": "15-10-2023",
+        "currency": "NGN",
+        "currency symbol": "₦",
+        "regions": {}
+    },
+    {
         "name": "Netherlands",
         "code": "nl",
         "first date": "10-10-2023",
@@ -261,6 +285,14 @@
         "first date": "10-10-2023",
         "currency": "EUR",
         "currency symbol": "€",
+        "regions": {}
+    },
+    {
+        "name": "South Africa",
+        "code": "za",
+        "first date": "10-10-2023",
+        "currency": "ZAR",
+        "currency symbol": "R",
         "regions": {}
     },
     {
