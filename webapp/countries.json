@@ -288,6 +288,14 @@
         "regions": {}
     },
     {
+        "name": "South Africa",
+        "code": "za",
+        "first date": "10-10-2023",
+        "currency": "ZAR",
+        "currency symbol": "R",
+        "regions": {}
+    },
+    {
         "name": "Sweden",
         "code": "se",
         "first date": "10-10-2023",
